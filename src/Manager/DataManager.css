@@ -1,0 +1,117 @@
+/* Container styling */
+/* Container styling */
+.data-container {
+  margin: 20px auto;
+  padding: 150px 20px 20px 20px; /* Added 40px padding from the top */
+  max-width: 1200px;
+  background-color: #f8fafc; /* Light background for better readability */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Header styling */
+.data-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 2px solid #00b4d8; /* Light blue underline */
+  padding-bottom: 10px;
+}
+
+/* User list styling */
+.user-list {
+  display: flex;
+  flex-wrap: wrap; /* Enable multiple rows for responsive layout */
+  justify-content: space-between; /* Space out items evenly */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual user item styling */
+.user-item {
+  flex: 1 1 calc(33% - 20px); /* 3 cards per row, with margin */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #00b4d8; /* Blue border for emphasis */
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on user items */
+.user-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling inside user items */
+.user-item p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Highlight key labels */
+.user-item strong {
+  color: #0077b6; /* Deep blue for labels */
+  font-weight: bold;
+}
+
+/* Divider line between sections within the card */
+.user-item hr {
+  margin: 15px 0;
+  border: 0.5px solid #00b4d8;
+}
+
+/* No users found styling */
+.data-container p {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 10px; /* Added gap between Edit and Delete buttons */
+  margin-top: 10px;
+}
+
+/* Button styling */
+.user-item button {
+  background-color: #00b4d8; /* Light blue */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on buttons */
+.user-item button:hover {
+  background-color: #0077b6; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .user-item {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-item {
+    flex: 1 1 100%; /* 1 card per row for small screens */
+  }
+}

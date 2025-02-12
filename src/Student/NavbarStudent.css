@@ -1,0 +1,72 @@
+/* Navbar Styling */
+nav {
+    background-color: #34495e;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  nav a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Specific styles for Logout and Update Password */
+  .navbar-link {
+    font-size: 1rem;
+  }
+  
+  .navbar-link.update-password {
+    background-color: #16a085;
+    margin-left: 20px;
+    border-radius: 8px;
+  }
+  
+  .navbar-link.update-password:hover {
+    background-color: #1abc9c;
+  }
+  
+  .navbar-link.logout {
+    background-color: #e74c3c;
+    margin-left: 20px;
+    border-radius: 8px;
+  }
+  
+  .navbar-link.logout:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    nav {
+      padding: 10px 0;
+    }
+  
+    nav a {
+      font-size: 14px;
+      margin: 0 15px;
+    }
+  }
+  

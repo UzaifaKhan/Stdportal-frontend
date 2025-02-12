@@ -1,0 +1,115 @@
+/* Container for the page */
+.logs-container {
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.logs-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Table borders styling - set border width to 3px */
+table, th, td {
+  border: 3px solid #ddd;
+}
+
+/* Table headers styling */
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table rows styling */
+td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Table row hover effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for message column (adds ellipsis if too long) */
+td.message {
+  max-width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Style for IP Address column */
+td.ipAddress {
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+/* Style for Device Info column */
+td.deviceInfo {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Style for Created At column */
+td.createdAt {
+  max-width: 200px;
+}
+
+/* Create a responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+  .logs-container {
+    width: 90%;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logs-container {
+    width: 95%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

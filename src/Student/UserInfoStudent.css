@@ -1,0 +1,119 @@
+/* Styling for the entire container */
+.user-info-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 20px 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields and button container */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Button styling */
+  .fetch-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .fetch-button:hover {
+    background-color: #45a049;
+  }
+  
+  .fetch-button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for user data display section */
+  .user-info-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* User Info Title */
+  .user-info-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* User Information data grid */
+  .user-info-data {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+  /* User Info paragraphs */
+  .user-info-data p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+  }
+  
+  /* Make the label (strong) more distinct */
+  .user-info-data p strong {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    width: 150px;
+    word-wrap: break-word; /* Ensure long words are wrapped properly */
+  }
+  
+  /* Add background color and padding to alternate rows for better readability */
+  .user-info-data p:nth-child(odd) {
+    background-color: #f9f9f9;
+    padding-left: 10px;
+    border-radius: 4px;
+  }
+  
+  .user-info-data p:nth-child(even) {
+    background-color: #ffffff;
+    padding-left: 10px;
+    border-radius: 4px;
+  }
+  

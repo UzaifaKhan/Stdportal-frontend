@@ -1,0 +1,97 @@
+/* Navbar Styling */
+nav {
+  background-color: #34495e; /* Dark background color for navbar */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center; /* Ensure the links are centered */
+  align-items: center;
+  margin: 0; /* Remove any margin to make it flush */
+}
+
+nav a {
+  color: #ecf0f1; /* Light text color */
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #2980b9; /* Hover color */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Specific styles for links with additional functionality like logout and update password */
+.navbar-link {
+  font-size: 1rem;
+  text-transform: capitalize; /* Ensure text is well formatted */
+}
+
+.navbar-link.update-password {
+  background-color: #16a085;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.navbar-link.update-password:hover {
+  background-color: #1abc9c;
+}
+
+.navbar-link.logout {
+  background-color: #e74c3c;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.navbar-link.logout:hover {
+  background-color: #c0392b;
+}
+
+/* For better positioning when using the links in the main nav */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  ul {
+    flex-direction: column; /* Stack links vertically on small screens */
+    align-items: center;
+  }
+
+  li {
+    padding: 5px 0;
+  }
+}

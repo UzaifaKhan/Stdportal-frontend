@@ -1,0 +1,51 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f8fa;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 60px; /* To create space for the fixed navbar */
+    overflow-x: hidden;
+  }
+  
+  /* Main Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ensure the content area doesn't get too wide */
+    margin: 0 auto;
+  }
+  
+  /* Page Header */
+  .dashboard-container h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
